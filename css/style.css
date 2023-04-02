@@ -262,14 +262,14 @@ button:active{
       display: block;
     }
     main{
-      height: 100vh;
+      height: 99vh;
       position: fixed;
       padding: .5em;
       border: 2px solid white;
       border-radius: 10px;
       background-color: rgba(26, 26, 26, 0.945);
       color: black;
-      -webkit-text-stroke: .001rem yellow;
+      -webkit-text-stroke: 1rem yellow;
       z-index: 5;
     }
     h1{
@@ -293,7 +293,7 @@ button:active{
       width: 95%;
       left: 2.5%;
       font-size: 3rem;
-      -webkit-text-stroke: .001rem yellow;
+      -webkit-text-stroke: 1rem yellow;
     }
     .openning{
       margin-top: 6em;
@@ -310,7 +310,7 @@ button:active{
       border-radius: 10px;
       background-color: rgba(26, 26, 26, 0.945);
       color: black;
-      -webkit-text-stroke: .2rem yellow;
+      -webkit-text-stroke: 1rem yellow;
       z-index: 5;
     }
     .arena h2,
