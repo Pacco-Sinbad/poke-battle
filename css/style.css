@@ -208,7 +208,9 @@ button:active{
 .hidden{
   visibility: collapse;
 }
-
+#start{
+  display: none;
+}
 
 
 /* ============================================= 
@@ -250,7 +252,22 @@ button:active{
     body{
       background-size: 400%;
     }
+    #start{
+      display: block;
+    }
+    main{
+      height: 100vh;
+      position: fixed;
+      padding: .5em;
+      border: 2px solid white;
+      border-radius: 10px;
+      background-color: rgba(26, 26, 26, 0.945);
+      color: black;
+      -webkit-text-stroke: .001rem yellow;
+      z-index: 5;
+    }
     h1{
+      padding-top: 30%;
       font-size: 4rem;
       line-height: 4rem;
     }
@@ -259,6 +276,7 @@ button:active{
     }
     .arena{
       flex-direction: column;
+      height: 100vh;
     }
     .format{
       margin-top: -3rem;
@@ -268,27 +286,49 @@ button:active{
       font-size: 2.5rem;
       width: 95%;
       left: 2.5%;
-      -webkit-text-stroke: 2px yellow;
+      font-size: 3rem;
+      -webkit-text-stroke: .001rem yellow;
     }
     .openning{
       margin-top: 6em;
     }
     #fight{
       position: fixed;
-      font-size: 3rem;
-      left: 35%;
-      bottom: 42%;
+      text-align: center;
+      font-size: 4rem;
+      width: 70%;
+      left: 15%;
+      bottom: 10%;
+      padding: .5em;
+      border: 2px solid white;
+      border-radius: 10px;
+      background-color: rgba(26, 26, 26, 0.945);
+      color: black;
+      -webkit-text-stroke: .2rem yellow;
+      z-index: 5;
     }
     .arena h2,
     .arena h3{
       font-size: 3rem;
-      flex-direction: row;
       margin: 0;
+      width: 50%;
+      text-align: center;
     }
-    .computer,
-    .user{
+    .arena h2{
       width: 100%;
-    }    
+      text-align: center;
+      
+    }
+    .arena .computer,
+    .arena .user{
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    } 
+    .arena .bot,
+    .arena .trainer{
+      width: 100%;
+    }   
 }
 
 @media screen and (max-width: 385px) {

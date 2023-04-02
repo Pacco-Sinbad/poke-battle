@@ -58,7 +58,10 @@ function moveOnDID(){
   location.reload()
 }
 
-
+document.querySelector('#start').addEventListener('click', hideMain);
+function hideMain(){
+  document.querySelector('.main').style.display = 'none'
+}
 
 document.querySelector('#choose').addEventListener('click', battle);
 let trainersChoice 
