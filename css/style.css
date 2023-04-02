@@ -345,7 +345,13 @@ button:active{
       width: 200%;
     } 
     #start,
-    #begin{
+    #begin,
+    #ok,
+    #ook,
+    #oook,
+    #ooook,
+    #oooook,
+    #ooooook{
       font-family: 'Changa One', cursive;
       font-weight: 700;
       font-size: 2rem;
