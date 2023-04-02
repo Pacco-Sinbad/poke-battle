@@ -1,0 +1,293 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5d13c5ca-10aa-4e58-be95-765f51edd200/d53bfm7-43b23e83-b808-4c06-8713-1a45de873cfd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVkMTNjNWNhLTEwYWEtNGU1OC1iZTk1LTc2NWY1MWVkZDIwMFwvZDUzYmZtNy00M2IyM2U4My1iODA4LTRjMDYtODcxMy0xYTQ1ZGU4NzNjZmQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UWcbW37jaJl88gUHhlMTeqep6PggKwz4foOQr1EyySg);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-size: 4rem;
+  font-weight: 600;
+  color: yellow;
+  -webkit-text-stroke: 2px black;
+  font-family: fantasy;
+
+}
+.narrator{
+  left: 33.333%;
+  width: 33.3333%;
+  text-align: center;  
+  position: fixed;
+  font-size: 3.5rem;
+  margin-right: 2em;
+  padding: .5em;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgba(26, 26, 26, 0.911);
+  color: black;
+  -webkit-text-stroke: .001rem yellow;
+  z-index: 5;
+  }
+  .narrator button{
+    font-family: fantasy;
+  }
+  .openning{
+    margin-top: 8em;
+  }
+  .win,
+  .loss,
+  .draw,
+  .defeat,
+  .victory,
+  .didntLose{
+    display: none;
+    margin-top: 32rem;
+  }
+  .win,
+  .loss,
+  .draw{
+    z-index: 5;
+  }
+  .defeat,
+  .victory,
+  .didntLose{
+    z-index: 4;
+  }
+/* USER INTERFACE */
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3rem 0 0 0;
+  
+}
+main{
+  text-align: center;
+}
+h1{
+  margin-bottom: 2rem;
+  font-size: 7rem;
+  line-height: 6rem;
+}
+h2{
+  margin-bottom: 2rem;
+}
+.format{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.form{
+  color: red;
+  -webkit-text-stroke: 2px black;
+}
+input{
+  background-color: yellow;
+  padding: .5em;
+  font-size: 2rem;
+  z-index: 3;
+  width: 80%;
+}
+button{
+  background-color: yellow;
+  
+}
+button:active{
+  background-color: rgb(255, 102, 0);
+  transform: translateY(2%);
+  
+}
+#choose{
+  z-index: 3;
+}
+
+/* ARENA */
+
+.arena{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.arena section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.user,
+.computer{
+  width: 40%;
+}
+.trainer,
+.bot{
+ width: 33.3%;
+ height: auto;
+ transform: translateY(-17%);
+}
+#points{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ 
+  width: 100%;
+  margin-bottom: .5em;
+}
+#pointsR{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+ 
+  width: 100%;
+  margin-bottom: .5em;
+}
+.arena .life{
+  width: 15%;
+  height: auto;
+}
+.pokename,
+.poketype{
+  font-size: 3rem;
+}
+
+#fight{
+  text-align: left;
+  background-color: rgba(255, 255, 0, 0);
+  border: 0px;
+  width: 100%;
+  z-index: 4;
+  font-size: 5rem;
+  -webkit-text-stroke: 0px;
+  font-family: fantasy;
+  color: yellow;
+  -webkit-text-stroke: 2px black;
+  border-radius: 50%;
+  transform: translate(-12%,0);
+  
+}
+#fight:hover{
+  color: rgb(107, 52, 0);
+  font-size: 6rem;
+  -webkit-text-stroke: 2px black;
+  transform: translateX(-16%);
+}
+#fight:active{
+  color: rgb(255, 123, 0);
+  font-size: 7rem;
+  -webkit-text-stroke: 2px black;
+  transform: translate(-16%,0);
+}
+.hidden{
+  visibility: collapse;
+}
+
+
+
+/* ============================================= 
+=============additional styles==================
+================================================*/
+
+@media screen and (max-width: 1032px) {
+    body{
+      background-size: 200%;
+    }
+}
+
+@media screen and (max-width: 773px) {
+    body{
+      background-size: 300%;
+    }
+    input{
+      width: 110%;
+      padding: .2em;
+    }
+}
+
+@media  screen and (max-width: 759px) {
+    .narrator{
+      width: 50%;
+      left: 25%;
+    }
+    #fight{
+      transform: translateY(40%);
+      font-size: 4rem;
+    }
+    #fight:hover{
+      font-size: 4rem;
+      transform: translateY(40%);
+    }
+}
+
+@media screen and (max-width: 516px) {
+    body{
+      background-size: 400%;
+    }
+    h1{
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+    h2{
+      font-size: 3rem;
+    }
+    .arena{
+      flex-direction: column;
+    }
+    .format{
+      margin-top: -3rem;
+    }
+    .narrator{
+      margin-top: 10.5em;
+    }
+    .openning{
+      margin-top: 6em;
+    }
+    #fight{
+      position: fixed;
+      font-size: 3rem;
+      left: 35%;
+      bottom: 42%;
+    }
+    .arena h2,
+    .arena h3{
+      font-size: 3rem;
+      flex-direction: row;
+      margin: 0;
+    }
+    .computer,
+    .user{
+      width: 100%;
+    }    
+}
+
+@media screen and (max-width: 385px) {
+  body{
+    background-size: 500%;
+  }
+}

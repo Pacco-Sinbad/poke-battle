@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>PokeBattle</title>
+
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico"><!--favicon-->
+
+		<!-- 		for adding a thumbnail      -->
+		<!--  Essential META Tags -->
+		<meta property="og:title" content="Pokemon Battle">
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"><!-- add image url here-->
+		<meta property="og:url" content=""><!-- add page url here-->
+		<meta name="twitter:card" content="summary_large_image">
+		<!--  Non-Essential, But Recommended -->
+		<meta property="og:description" content="Pokemon Battle"> <!--site description-->
+		<meta property="og:site_name" content="Random CAT FActs">
+		<meta name="twitter:image:alt" content="Thanks for looking">
+		<!--  Non-Essential, But Required for Analytics -->
+		<meta name="twitter:site" content="">
+		<!-- end of thumbnail info -->
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!--Font Awesme Goes Here-->
+	</head>
+	<body>
+		<section class="narrator openning">
+			<h4>You'll have the opportunity<br> to fight with multiple Pokemon<br> so make sure you fight<br> until the battle is decided!</h4>
+			<button id="begin">Let's Begin!!!</button>
+		</section>
+		<section class="win narrator">
+			<h4>Your opponents Pokemon fainted!</h4>
+			<button id="ok">OK>></button>
+		</section>
+		<section class="loss narrator">
+			<h4>Your Pokemon fainted...</h4>
+			<button id="ook">OK>></button>
+		</section>
+		<section class="draw narrator">
+			<h4>Stalemate!!!</h4>
+			<button id="oook">OK>></button>
+		</section>
+		<section class="defeat narrator">
+			<h4>Your opponent has won the battle. Stand strong in defeat and train for your next match up.</h4>
+			<button id="ooook">OK>></button>
+		</section>
+		<section class="victory narrator">
+			<h4>You have defeated your opponent!!! Congratulations!!!</h4>
+			<button id="oooook">OK>></button>
+		</section>
+		<section class="didntLose narrator">
+			<h4>You wore out your opponent without using typed advantages! A hard fought victory!</h4>
+			<button id="ooooook">OK>></button>
+		</section>
+
+		<main>
+			<h1>Pokemon&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;BATTLE!!!</h1>
+			<h2>Choose your Pokemon out of the Original 150!!!</h2>
+				
+		</main>
+
+		<section class="arena">
+			<section class="user">
+				<section id="points">
+					<img id="u1" class="life" src="" alt=""><img id="u2" class="life" src="" alt=""><img id="u3" class="life" src="" alt="">
+				</section>
+				<h2>TRAINER</h2>
+				<h3 id="uname" class="pokename"></h3>
+				<h3 id="utype" class="poketype"></h3>
+				<img class="trainer" src="" alt="">
+			</section>
+	
+			<section class="format">
+					<button class="hidden" id="fight">BATTLE!!!</button>
+				<section class="form">
+					<input type="text" name="" id="">
+					<button id="choose">I CHOOSE YOU!!!</button>
+				</section>	
+			</section>
+
+			<section class="computer">
+				<section id="pointsR">
+					<img id="b1" class="life" src="" alt=""><img id="b2" class="life" src="" alt=""><img id="b3" class="life" src="" alt="">
+				</section>
+				<h2>OPPONENT</h2>
+				<h3 id="bname" class="pokename"></h3>
+				<h3 id="btype" class="poketype"></h3>
+				<img class="bot" src="" alt="">
+			</section>
+		</section>
+
+		
+		
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
