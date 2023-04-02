@@ -344,8 +344,11 @@ button:active{
       margin-top: 1rem;
       width: 200%;
     } 
-    #start{
-      font-size: 3rem;
+    #start,
+    #begin{
+      font-family: 'Changa One', cursive;
+      font-weight: 700;
+      font-size: 2rem;
       -webkit-text-stroke: 0;
     }  
 }
