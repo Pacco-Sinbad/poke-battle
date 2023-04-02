@@ -269,7 +269,7 @@ button:active{
       border-radius: 10px;
       background-color: rgba(26, 26, 26, 0.945);
       color: black;
-      -webkit-text-stroke: 1rem yellow;
+      -webkit-text-stroke: .2rem yellow;
       z-index: 5;
     }
     h1{
@@ -283,6 +283,7 @@ button:active{
     .arena{
       flex-direction: column;
       height: 100vh;
+      margin-top: -2rem;
     }
     .format{
       margin: -2rem 0 1rem 0;
@@ -293,7 +294,7 @@ button:active{
       width: 95%;
       left: 2.5%;
       font-size: 3rem;
-      -webkit-text-stroke: 1rem yellow;
+      -webkit-text-stroke: .2rem yellow;
     }
     .openning{
       margin-top: 6em;
@@ -301,16 +302,16 @@ button:active{
     #fight{
       position: fixed;
       text-align: center;
-      font-size: 4rem;
+      font-size: 2rem;
       width: 70%;
       left: 15%;
-      bottom: 10%;
+      bottom: 6%;
       padding: .5em;
       border: 2px solid white;
       border-radius: 10px;
       background-color: rgba(26, 26, 26, 0.945);
       color: black;
-      -webkit-text-stroke: 1rem yellow;
+      -webkit-text-stroke: .2rem yellow;
       z-index: 5;
     }
     .arena h2,
