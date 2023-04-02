@@ -264,11 +264,14 @@ button:active{
       margin-top: -3rem;
     }
     .narrator{
-      margin-top: 10.5em;
+      margin: 10.5em 0 0 0;
+      font-size: 2.5rem;
+      width: 95%;
+      left: 2.5%;
+      -webkit-text-stroke: 2px yellow;
     }
     .openning{
       margin-top: 6em;
-      font-size: 2.5rem;
     }
     #fight{
       position: fixed;
