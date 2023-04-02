@@ -122,6 +122,7 @@ button:active{
   
 }
 #choose{
+  margin-top: 1rem;
   z-index: 3;
 }
 
@@ -179,7 +180,7 @@ button:active{
 }
 
 #fight{
-  text-align: left;
+  /* text-align: left;
   background-color: rgba(255, 255, 0, 0);
   border: 0px;
   width: 100%;
@@ -190,21 +191,26 @@ button:active{
   color: yellow;
   -webkit-text-stroke: 2px black;
   border-radius: 50%;
-  transform: translate(-12%,0);
-  
+  transform: translate(-12%,0); */
+  position: fixed;
+      text-align: center;
+      font-size: 4rem;
+      width: 70%;
+      left: 15%;
+      bottom: 25%;
+      padding: .5em;
+      border: 2px solid white;
+      border-radius: 10px;
+      background-color: rgba(26, 26, 26, 0.945);
+      color: black;
+      -webkit-text-stroke: .2rem yellow;
+      z-index: 5;  
 }
 #fight:hover{
-  color: rgb(107, 52, 0);
-  font-size: 6rem;
-  -webkit-text-stroke: 2px black;
-  transform: translateX(-16%);
+ 
+  transform: translateY(-16%);
 }
-#fight:active{
-  color: rgb(255, 123, 0);
-  font-size: 7rem;
-  -webkit-text-stroke: 2px black;
-  transform: translate(-16%,0);
-}
+
 .hidden{
   visibility: collapse;
 }
@@ -279,7 +285,7 @@ button:active{
       height: 100vh;
     }
     .format{
-      margin-top: -3rem;
+      margin: -2rem 0 1rem 0;
     }
     .narrator{
       margin: 10.5em 0 0 0;
@@ -328,6 +334,13 @@ button:active{
     .arena .bot,
     .arena .trainer{
       width: 100%;
+    }
+    input{
+      width: 200%;
+    }
+    #choose{
+      margin-top: 1rem;
+      width: 200%;
     }   
 }
 
