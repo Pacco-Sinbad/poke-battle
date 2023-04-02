@@ -23,7 +23,8 @@ body{
   font-weight: 600;
   color: yellow;
   -webkit-text-stroke: 2px black;
-  font-family: fantasy;
+  font-family: 'Changa One', cursive;
+  font-weight: 700;
 
 }
 .narrator{
@@ -42,7 +43,7 @@ body{
   z-index: 5;
   }
   .narrator button{
-    font-family: fantasy;
+    font-family: 'Changa One', cursive;
   }
   .openning{
     margin-top: 8em;
@@ -185,7 +186,7 @@ button:active{
   z-index: 4;
   font-size: 5rem;
   -webkit-text-stroke: 0px;
-  font-family: fantasy;
+  font-family: 'Changa One', cursive;
   color: yellow;
   -webkit-text-stroke: 2px black;
   border-radius: 50%;
