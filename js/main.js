@@ -293,7 +293,7 @@ if(user == 'normal' && bot == 'normal'){
   drawCounter ++
 }else if(user == 'fire' && bot == 'grass'){
   document.querySelector('.win').style.display = 'block';
-
+  counterU++
 }else if(user == 'fire' && bot == 'ice'){
   document.querySelector('.loss').style.display = 'block';
   counterB++
@@ -312,6 +312,7 @@ if(user == 'normal' && bot == 'normal'){
   drawCounter ++
 }else if(user == 'fire' && bot == 'bug'){
   document.querySelector('.win').style.display = 'block';
+  counterU++
 }else if(user == 'fire' && bot == 'rock'){
   document.querySelector('.loss').style.display = 'block';
   counterB++
@@ -1064,8 +1065,8 @@ else if(user == 'steel' && bot == 'normal'){
 
 //////
 
-// console.log(counterB)
-// console.log(counterU)
+console.log(counterB)
+console.log(counterU)
 
 if(drawCounter === 3){
   drawCounter = 0
