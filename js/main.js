@@ -1068,7 +1068,7 @@ else if(user == 'steel' && bot == 'normal'){
 console.log(counterB)
 console.log(counterU)
 
-if(drawCounter === 3){
+if(drawCounter === 5){
   drawCounter = 0
   counterB = 0
   counterU = 0
